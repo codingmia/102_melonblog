@@ -2,12 +2,11 @@
 A blog project based on Express, node.js
 
 Goals implemented
-  -install necessary packages and set up development environment
-      -express, node.js, mongo db and others
-  -gain understanding in mvc, router, middleware
-  -work with template engine
-  -work with express version update
-  -work with third-party middleware
+- install necessary packages and set up development environment
+- gain understanding in mvc, router, middleware
+- work with template engine
+- work with express version update
+- work with third-party middleware
       
 Blog functions completed
 - Login/Logout
