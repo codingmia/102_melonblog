@@ -1,0 +1,26 @@
+1 Database related
+
+To start a mongo db:
+$ cd MEAN/mongodb
+$ mongod --dbpath melonblog/
+
+
+seeing "waiting for connections on port 27017",
+the mongodb server has been correctly set up and started.
+(Otherwise you may see some strange, SESSION TTL errors)
+
+
+If you see like cannot binding(), address already taken,
+Try kill all other mongo processes
+
+$ ps wuax | grep mongo
+$ sudo kill 1234"
+where 1234 is the process ID of the mongo instance
+
+
+2. Cannot find property of undefined,
+most probably typos or hoisting hells
+
+3. Github tutorial
+
+http://programertools.blogspot.com/2014/04/how-to-use-github.html
