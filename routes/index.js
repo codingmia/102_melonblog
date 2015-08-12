@@ -104,6 +104,22 @@ module.exports = function(app) {
 		res.redirect('/');
 	});
 
+	app.get('/upload', checkLogin);
+	app.get('/upload', function(req, res){
+		res.render('upload',{
+			title: 'file upload',
+			user: req.session.user,
+			success: req.flash('success').toString(),
+			error: req.flash('error').toString()
+		});
+	});
+
+	app.post('/upload',checkLogin);
+	app.post('/upload', function(req, res){
+		req.flash('success', 'File upload success!');
+		res.redirect('/upload');
+	});
+
 	app.get('/post', checkLogin);
 	app.get('/post', function (req, res) {
 		res.render('post', { 
