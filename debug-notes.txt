@@ -1,14 +1,18 @@
 1 Database related
 
 To start a mongo db:
-$ cd MEAN/mongodb
-$ mongod --dbpath melonblog/
+$ cd Desktop/MEAN/mongodb
+$ mongod --dbpath blog/
 
 
 seeing "waiting for connections on port 27017",
 the mongodb server has been correctly set up and started.
 (Otherwise you may see some strange, SESSION TTL errors)
+- TTL/ session bug may also be caused by the incompatibility of connect-mongo, try use 0.7.0
 
+- An error occur after I delete contents in DB.
+(Update the connect-mongo version fix it)
+- kill all mongo processes and reset $ mongod --dbpath blog/
 
 If you see like cannot binding(), address already taken,
 Try kill all other mongo processes
